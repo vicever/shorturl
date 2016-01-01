@@ -18,7 +18,7 @@ const redisDB string = "db0"
 var rc redis.Conn
 
 func main() {
-	//Post accountNO to Create function, create a ShortURL by MD5
+	//Post accountNO to Create function, create a ShortURL by MD5.
 	http.HandleFunc("/create", creatBarcode)
 
 	//Get a accountNO by Get param=MD5 value
